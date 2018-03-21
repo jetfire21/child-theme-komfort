@@ -1,0 +1,221 @@
+/*
+ Theme Name:   SEOCrawler Child
+ Theme URI:    http://demo.goodlayers.com/seocrawler
+ Description:  Goodlayers SEOCrawler Child Theme
+ Author:       Goodlayers
+ Author URI:   http://goodlayers.com
+ Template:     seocrawler
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, right-sidebar, responsive-layout
+ Text Domain:  seocrawler-child
+
+ START YOUR CHILD THEME CSS HERE
+ */
+
+@font-face {
+    font-family: 'DomCasual-Normal';
+    src: url('fonts/DomCasual/DomCasual-Normal.eot');
+    src: url('fonts/DomCasual/DomCasual-Normal.eot?#iefix') format('embedded-opentype'), url("fonts/DomCasual/DomCasual-Normal.woff") format("woff"), url("fonts/DomCasual/DomCasual-Normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+ @font-face {
+ 	font-family: 'DomCasualNormal';
+ 	src: url('DomCasualNormal.woff') format('woff'),
+ 	url('DomCasualNormal.svg#DomCasualNormal') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+
+ @font-face {
+ 	font-family: "AaarghRegular";
+ 	src: url("../fonts/AaarghRegular/AaarghRegular.eot");
+ 	src: url("../fonts/AaarghRegular/AaarghRegular.eot?#iefix")format("embedded-opentype"),
+ 	url("../fonts/AaarghRegular/AaarghRegular.woff") format("woff"),
+ 	url("../fonts/AaarghRegular/AaarghRegular.ttf") format("truetype");
+ 	font-style: normal;
+ 	font-weight: normal;
+ }
+ */
+
+/*
+часть стилей здесь
+http://snp-komfort.loc/wp-content/uploads/seocrawler-style-custom.css?1521625130&ver=4.9.4
+*/
+
+/*.seocrawler-body h1, .seocrawler-body h2, .seocrawler-body h3, .seocrawler-body h4, .seocrawler-body h5, .seocrawler-body h6, .seocrawler-body .seocrawler-title-font, .seocrawler-body .gdlr-core-title-font, header a {
+    font-family: 'DomCasual-Normal', sans-serif;
+    }*/
+
+.seocrawler-body, .seocrawler-body p, .seocrawler-line-height, .gdlr-core-line-height {
+    /*line-height: 1.2 !important;*/
+    line-height: 1.2;
+}
+.text-all-color-white * {
+    color: #fff !important;
+}
+/*darken bg image*/
+
+/*gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js*/
+
+.bg-image-darken .gdlr-core-pbf-background:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    top: 0;
+}
+.bg-image-darken .gdlr-core-pbf-wrapper-content {
+    z-index: 2;
+}
+/*darken bg image*/
+
+.as21-logo {
+    text-align: left;
+}
+.as21-phones {
+    text-align: right;
+    padding-top: 13px;
+}
+.as21-middle-logo-phones{   padding-top: 49px; }
+.seocrawler-navigation {
+    padding-top: 0 !important;
+}
+.seocrawler-navigation .sf-menu>li>a {
+    padding: 25px 0 !important;
+}
+.seocrawler-mobile-header .seocrawler-logo, header .seocrawler-logo {
+    display: none;
+}
+.seocrawler-logo {
+    padding-top: 0 !important;
+}
+.seocrawler-logo img {
+    max-height: 120px;
+    width: auto;
+}
+.mm-menu.mm-offcanvas {
+    z-index: 99999999;
+}
+.as21-top-wrap {
+    padding-top: 15px !important;
+}
+/* humburger when bg white */
+
+@media screen and (max-width: 999px) {
+    .seocrawler-mobile-button-hamburger:before, .seocrawler-mobile-button-hamburger:after, .seocrawler-mobile-button-hamburger span {
+        background: #000 !important;
+    }
+    .seocrawler-mobile-header-container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .as21-top-wrap .gdlr-core-pbf-column * {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.as21-system-info-overlay {
+    position: fixed;
+    z-index: 999999991;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.seocrawler-body h1, .seocrawler-body h2, .seocrawler-body h3, .seocrawler-body h4, .seocrawler-body h5, .seocrawler-body h6, .seocrawler-body .seocrawler-title-font, .seocrawler-body .gdlr-core-title-font {
+    font-family: 'DomCasual-Normal', sans-serif;
+}
+.seocrawler-navigation .sf-menu>li>a, .seocrawler-navigation .sf-vertical>li>a, .seocrawler-navigation-font {
+    font-family: 'DomCasual-Normal', sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+.as21-top-wrap p {
+    font-family: 'DomCasual-Normal', sans-serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 0;
+}
+.as21-phones p {
+    color: #000 !important;
+    /*color: #04e9fc !important;*/
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.as21-phones p, .as21-middle-logo-phones p {
+    line-height: 1 !important;
+}
+.seocrawler-navigation .sf-menu>li>a:hover, .seocrawler-navigation .sf-vertical>li>a:hover, .seocrawler-navigation-font:hover {
+    color: #fff;
+}
+.as21-wrapper-blue {
+    background: #04e9fc;
+}
+.as21-top-wrap div {
+    vertical-align: middle;
+}
+/* universal vertical align block middle logo & phones */
+
+/*.as21-middle-logo-phones  {
+    height: 185px;
+}
+.as21-middle-logo-phones:after {
+    display: inline-block !important;
+    height: 100%;
+    content: "";
+    vertical-align: middle
+}
+
+.as21-middle-logo-phones * {
+    display: inline-block;
+}
+
+.as21-middle-logo-phones div{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fcc;
+}*/
+
+/* vertical align block middle logo & phones */
+
+/* global temp */
+
+.as21-system-info * {
+    color: #fff !important;
+}
+.as21-system-info {
+    position: relative;
+    z-index: 999999991;
+    margin: 50px auto auto auto;
+    padding: 10px 20px;
+    text-align: center;
+    background: #00BCD4;
+    max-width: 500px;
+}
+.as21-system-info .close {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+/**{
+	color:red !important;
+	}*/
+
+/* 
+ C:/Users/Achiles-a/AppData/Roaming/npm
+ C:\Users\Achiles-a\AppData\Roaming\npm
+ C:/Users/myUserName/AppData/Roaming/npm
+ c:\Users\Achiles-a\AppData\Roaming\npm\csslint
+  
